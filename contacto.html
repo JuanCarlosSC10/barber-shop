@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Reserva tu cita en Porte Fino o contáctanos para más información sobre nuestros servicios.">
+    <title>Contacto y Reservas | Porte Fino</title>
+    <link rel="icon" type="image/svg+xml" href="assets/svg/icon.svg">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+
+    <header class="cabecera-principal">
+        <div class="contenedor-nav">
+            <a href="index.html" class="marca-logo" aria-label="Inicio Porte Fino">
+                <img src="assets/svg/icon_barb.svg " alt="Icono Barbería" class="icono-cabecera">
+                <img src="assets/img/logoPonteFino.png" alt="Logo Porte Fino Barber Club" class="logo-cabecera">
+            </a>
+            <nav aria-label="Navegación principal">
+                <ul class="menu-lista">
+                    <li><a href="index.html" class="menu-enlace">Inicio</a></li>
+                    <li><a href="servicios.html" class="menu-enlace">Servicios</a></li>
+                    <li><a href="nosotros.html" class="menu-enlace">Nosotros</a></li>
+                    <li><a href="contacto.html" class="menu-enlace menu-enlace-activo">Reservas</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="seccion-contenedor">
+            <header class="seccion-encabezado">
+                <h2 class="seccion-titulo">Reserva tu Cita</h2>
+                <div class="seccion-divisor"></div>
+                <p class="tarjeta-descripcion">Asegura tu espacio. Completa el formulario y te confirmaremos vía WhatsApp.</p>
+            </header>
+
+            <div class="grid-contacto">
+                
+                <div>
+                    <form action="#" method="GET" class="formulario-reserva" aria-label="Formulario de reservas">
+                        <div class="grupo-campo">
+                            <label for="nombre" class="etiqueta-campo">Nombre Completo:</label>
+                            <input type="text" id="nombre" name="nombre" class="entrada-campo" required placeholder="Ej. Juan Carlos">
+                        </div>
+                        
+                        <div class="grupo-campo">
+                            <label for="telefono" class="etiqueta-campo">Teléfono / Celular:</label>
+                            <input type="tel" id="telefono" name="telefono" class="entrada-campo" required placeholder="999 888 777" pattern="[0-9]{9}">
+                        </div>
+
+                        <div class="grupo-campo">
+                            <label for="servicio" class="etiqueta-campo">Servicio de Interés:</label>
+                            <select id="servicio" name="servicio" class="select-campo" required>
+                                <option value="" disabled selected>Selecciona un servicio...</option>
+                                <option value="corte">Corte Clásico / Fade</option>
+                                <option value="barba">Cuidado Facial</option>
+                                <option value="combo">Combo Completo</option>
+                            </select>
+                        </div>
+
+                        <div class="grupo-campo">
+                            <label for="fecha" class="etiqueta-campo">Fecha Deseada:</label>
+                            <input type="date" id="fecha" name="fecha" class="entrada-campo" required>
+                        </div>
+
+                        <div class="grupo-checkbox">
+                            <input type="checkbox" id="novedades" name="novedades" class="checkbox-campo">
+                            <label for="novedades" class="etiqueta-checkbox">Acepto recibir promociones exclusivas.</label>
+                        </div>
+
+                        <button type="submit" class="boton-primario boton-reserva">Confirmar Reserva</button>
+                    </form>
+                </div>
+
+                <div class="tarjeta-informacion">
+                    <h3 class="titulo-informacion">Ubícanos</h3>
+                    <ul class="lista-informacion">
+                        <li><i class="fas fa-map-marker-alt icono-informacion"></i> Real y Lobato, Huancayo - Peru</li>
+                        <li><i class="fas fa-clock icono-informacion"></i> Lun - Sáb: 10:00 AM - 9:00 PM</li>
+                        <li><i class="fab fa-whatsapp icono-informacion"></i> +51 987 654 321</li>
+                    </ul>
+                    
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d975.4438671388338!2d-75.21697907141758!3d-12.058963999258093!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTLCsDAzJzMyLjMiUyA3NcKwMTInNTguOCJX!5e0!3m2!1ses!2spe!4v1789272839073!5m2!1ses!2spe" width="500" height="320" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="pie-pagina">
+        <p>&copy; 2026 Porte Fino. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
