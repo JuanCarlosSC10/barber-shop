@@ -516,7 +516,30 @@ p, .tarjeta-descripcion, .etiqueta-checkbox, .lista-informacion {
         grid-template-columns: 1.2fr 1fr;
     }
 }
+@media (max-width: 47.9375rem) {
+    .icono-cabecera {
+        height: 3.5rem;
+    }
 
+    .logo-cabecera {
+        height: 2.5rem;
+    }
+
+    .menu-lista {
+        gap: 0.75rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .menu-enlace {
+        font-size: 0.85rem;
+    }
+
+    .mapa-iframe {
+        width: 100%;
+        height: 18rem;
+    }
+}
 .pie-pagina {
     background-color: var(--color-superficie-oscura);
     border-top: 0.0625rem solid #2e323b;
